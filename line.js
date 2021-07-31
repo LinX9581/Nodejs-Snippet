@@ -25,6 +25,15 @@ function handleEvent(event) {
         return console.log('Test hook recieved: ' + JSON.stringify(event.message));
     }
     console.log(`User ID: ${event.source.userId}`);
+    let userId = event.source.userId;
+    // console.log(event);
+    if (event.message.text == 'test') {
+        console.log('asdfasdf');
+        client.replyMessage(event.replyToken,);
+    }
+    if(event.message.text == 'rp'){
+        client.pushMessage(userId, { type: 'text', text: '132132' });
+    }
     switch (event.type) {
         case 'message':
             const message = event.message;
