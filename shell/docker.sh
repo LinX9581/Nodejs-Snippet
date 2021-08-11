@@ -6,6 +6,7 @@ sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt -y install nodejs
 npm i nodemon pm2 yarn -g
+sudo pm2 startup
 apt install git -y
 
 apt install nginx -y

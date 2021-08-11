@@ -2,6 +2,7 @@ import { createReadStream } from 'fs';
 import express from 'express';
 const app = express();
 var readStream = createReadStream('./fs/dump.txt');
+
 // app.get('/', (req, res) => {
 //     readStream.on('data', (data) => {
 //         res.write(data);
